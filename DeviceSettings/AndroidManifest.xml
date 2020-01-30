@@ -15,7 +15,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           android:sharedUserId="android.uid.system"
-          package="com.aosip.device.DeviceSettings"
+          package="com.magma.device.DeviceSettings"
           android:versionCode="1"
           android:versionName="1.0" >
 
@@ -53,7 +53,7 @@
         <activity android:name=".KeyHandler" />
 
         <activity
-            android:name="com.aosip.device.DeviceSettings.PanelSettingsActivity"
+            android:name="com.magma.device.DeviceSettings.PanelSettingsActivity"
             android:exported="true"
             android:label="@string/panel_category_title"
             android:launchMode="singleTask" >
@@ -63,7 +63,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.aosip.device.DeviceSettings.Startup" >
+        <receiver android:name="com.magma.device.DeviceSettings.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -71,7 +71,7 @@
 
         <!-- Quick Settings Tiles -->
         <service
-            android:name="com.aosip.device.DeviceSettings.PanelModeTileService"
+            android:name="com.magma.device.DeviceSettings.PanelModeTileService"
             android:icon="@drawable/ic_panel_tile"
             android:label="@string/tile_panel_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
